@@ -76,17 +76,17 @@ const getweather = (city) => {
 
 
             // windspeed image changing
-			if(parseFloat(wind_speed.innerHTML)<=1.0){
+			if(parseFloat(wind_speed.innerHTML)<=2.0){
 				img3.src='https://cdn-icons-png.flaticon.com/512/6015/6015171.png';
 				img3.style.height = '70px';
 				img3.style.width = '70px';
 			}
-			else if(parseFloat(wind_speed.innerHTML)>1.0 && parseFloat(wind_speed.innerHTML)<2.0){
+			else if(parseFloat(wind_speed.innerHTML)>2.0 && parseFloat(wind_speed.innerHTML)<5.0){
 				img3.src='	https://cdn-icons-png.flaticon.com/512/6014/6014856.png';
 				img3.style.height = '70px';
 				img3.style.width = '70px';
 			}
-			else if(parseFloat(wind_speed.innerHTML)>=2.0){
+			else if(parseFloat(wind_speed.innerHTML)>=5.0){
 				img3.src='https://cdn-icons-png.flaticon.com/512/5532/5532989.png';
 				img3.style.height = '70px';
 				img3.style.width = '70px';
